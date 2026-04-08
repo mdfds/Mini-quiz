@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Квіз 3</title>
+</head>
+<body style="font-family: Arial; text-align:center;">
+
+<h1>🌺 Кольори квітів</h1>
+
+<p>Якого кольору найчастіше троянди?</p>
+
+<button onclick="check('a')">Синій</button>
+<button onclick="check('b')">Червоний</button>
+<button onclick="check('c')">Зелений</button>
+
+<p id="result"></p>
+
+<a href="index.html">⬅ Назад</a>
+
+<script>
+function check(answer) {
+    if(answer === 'b') {
+        document.getElementById("result").innerText = "Правильно! ❤️";
+    } else {
+        document.getElementById("result").innerText = "Неправильно 😢";
+    }
+}
+</script>
+
+</body>
+</html>
