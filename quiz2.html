@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Квіз 2</title>
+</head>
+<body style="font-family: Arial; text-align:center;">
+
+<h1>🌼 Факти про квіти</h1>
+
+<p>Яка квітка повертається до сонця?</p>
+
+<button onclick="check('a')">Соняшник</button>
+<button onclick="check('b')">Лілія</button>
+<button onclick="check('c')">Орхідея</button>
+
+<p id="result"></p>
+
+<a href="index.html">⬅ Назад</a>
+
+<script>
+function check(answer) {
+    if(answer === 'a') {
+        document.getElementById("result").innerText = "Правильно! 🌞";
+    } else {
+        document.getElementById("result").innerText = "Неправильно 😢";
+    }
+}
+</script>
+
+</body>
+</html>
